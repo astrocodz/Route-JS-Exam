@@ -698,5 +698,3 @@ async function searchByFLetter(term) {
     $(".items-loading-screen").fadeOut(300)
 
 }
-
-
