@@ -92,7 +92,7 @@ margin-top: -5px;
     filter: opacity(1);}
 
 .side-nav-bar{
-    z-index: 1;
+    z-index: 2;
 }
 
 .cursor-pointer{
@@ -104,7 +104,7 @@ margin-top: -5px;
 }
 
 .loading-screen{
-    z-index: 2;
+    z-index: 3;
     display: flex;
     background-color: var(--main-color);
 }
