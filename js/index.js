@@ -360,7 +360,8 @@ function displayMeals(arr) {
 
 //Categories
 async function getCategories() {
-   //Clear content to recive new content
+    //Clear content to recive neew content
+    displayContainer.innerHTML = ""
     $(".items-loading-screen").fadeIn(300)
     searchedData.innerHTML = "";
 
@@ -407,7 +408,8 @@ function displayCategories(arr) {
 
 //Areas
 async function getArea() {
-   //Clear content to recive new content
+    //Clear content to recive neew content
+    displayContainer.innerHTML = ""
     $(".items-loading-screen").fadeIn(300)
 
     searchedData.innerHTML = "";
@@ -461,7 +463,8 @@ function displayArea(arr) {
 
 //Ingredients
 async function getIngredients() {
-   //Clear content to recive new content
+    //Clear content to recive neew content
+    displayContainer.innerHTML = ""
     $(".items-loading-screen").fadeIn(300)
 
     searchedData.innerHTML = "";
@@ -508,7 +511,8 @@ function displayIngredients(arr) {
 
 //Meals from Category
 async function getCategoryMeals(category) {
-   //Clear content to recive new content
+    //Clear content to recive neew content
+    displayContainer.innerHTML = ""
     $(".items-loading-screen").fadeIn(300)
 
     let response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`)
@@ -524,7 +528,8 @@ async function getCategoryMeals(category) {
 
 //Meals from Area
 async function getAreaMeals(area) {
-   //Clear content to recive new content
+    //Clear content to recive neew content
+    displayContainer.innerHTML = ""
     $(".items-loading-screen").fadeIn(300)
 
     let response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${area}`)
@@ -548,7 +553,8 @@ async function getAreaMeals(area) {
 //Meals from Ingredients
 
 async function getIngredientsMeals(ingredients) {
-   //Clear content to recive new content
+    //Clear content to recive neew content
+    displayContainer.innerHTML = ""
     $(".items-loading-screen").fadeIn(300)
 
     let response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredients}`)
@@ -570,7 +576,8 @@ async function getIngredientsMeals(ingredients) {
 
 async function getMealDetails(mealID) {
     sideBarClose()
-   //Clear content to recive new content
+    //Clear content to recive neew content
+    displayContainer.innerHTML = ""
     $(".items-loading-screen").fadeIn(300)
 
     searchedData.innerHTML = "";
@@ -660,12 +667,13 @@ function showSearchForm() {
         </div>
     </div>`
 //Clear content to recive neew content
-   //Clear content to recive new content
+    displayContainer.innerHTML = ""
 }
 
 async function searchByName(term) {
     sideBarClose()
-   //Clear content to recive new content
+    //Clear content to recive neew content
+    displayContainer.innerHTML = ""
     $(".items-loading-screen").fadeIn(300)
 
     let response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${term}`)
@@ -678,7 +686,8 @@ async function searchByName(term) {
 
 async function searchByFLetter(term) {
     sideBarClose()
-   //Clear content to recive new content
+    //Clear content to recive neew content
+    displayContainer.innerHTML = ""
     $(".items-loading-screen").fadeIn(300)
 
     term == "" ? term = " " : "";
