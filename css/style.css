@@ -1,0 +1,178 @@
+:root{
+    --main-color:#571845;
+    --secondry-color :#900c3fda;
+    --shadow-color:#764167;
+}
+
+
+
+body{
+    background-color: var(--main-color);
+    color: #fff;
+    overflow: hidden;
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.nav-tab{
+    background-color: var(--main-color);
+}
+
+input{
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+.nav-header{
+    background-color: var(--shadow-color);
+    color: #fff !important;
+}
+
+.country,.ingredients{
+    transition: 0.3s all;
+    padding: 10px 5px;
+    
+}
+
+.country:hover,.ingredients:hover{
+    background-color: #fff;
+    color: var(--main-color);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff !important;
+    opacity: 0.7 !important;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #fff !important;
+    opacity: 0.7 !important;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #fff !important;
+    opacity: 0.7 !important;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #fff !important;
+    opacity: 0.7 !important;
+  }
+
+.logo{
+    width: 50px;
+}
+
+i{
+    cursor: pointer;
+}
+.meal{
+    transition: 0.3s all;
+    overflow: hidden;
+    }
+.meal:hover{
+margin-top: -5px;
+}
+
+.meal-layer{
+    width: 100%;
+    height: 25%;
+    background-color:var(--secondry-color); 
+    transition: .3s all;
+    bottom: -1px;
+    filter: opacity(0);
+   
+}
+
+.meal-layer h3{
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    font-weight: 700;
+}
+
+.meal:hover .meal-layer{
+    filter: opacity(1);}
+
+.side-nav-bar{
+    z-index: 1;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.alert{
+    width: fit-content;
+}
+
+.loading-screen{
+    z-index: 2;
+    display: flex;
+    background-color: var(--main-color);
+}
+
+.items-loading-screen{
+    position: absolute;
+    z-index: 1;
+    background-color: var(--main-color);
+    display: flex;
+}
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 4px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    4.9% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    5% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+
+  
+
+  .recipes, .tags{
+    background-color: #fff;
+    color: var(--main-color);
+    padding: 5px 10px !important;
+    margin: 5px 5px 5px 0px;
+    border-radius: 5px;
+  }
+
+  .tags{
+    background-color: var(--shadow-color);
+    color: #fff;
+  }
