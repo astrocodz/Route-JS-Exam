@@ -344,7 +344,7 @@ function displayMeals(arr) {
     for (let i = 0; i < arr.length; i++) {
         appCartoona += `
         <div class="col-md-3">
-                <div onclick="getMealDetails('${arr[i].idMeal}')" class="meal position-relative overflow-hidden rounded-1 cursor-pointer">
+                <div onclick="getMealDetails('${arr[i].idMeal}')" class="meal position-relative overflow-hidden rounded-1 pointer">
                     <img class="w-100" src="${arr[i].strMealThumb}" alt="" srcset="">
                     <div class="meal-layer position-absolute d-flex align-items-center text-black p-2">
                         <h3>${arr[i].strMeal}</h3>
@@ -379,7 +379,7 @@ function displayCategories(arr) {
     for (let i = 0; i < arr.length; i++) {
         appCartoona += `
         <div class="col-md-4">
-                <div onclick="getCategoryMeals('${arr[i].strCategory}')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                <div onclick="getCategoryMeals('${arr[i].strCategory}')" class="meal position-relative overflow-hidden rounded-2 pointer">
                     <img class="w-100" src="${arr[i].strCategoryThumb}" alt="" srcset="">
                     <div class="meal-layer position-absolute text-center text-black p-2">
                         <h3>${arr[i].strCategory}</h3>
@@ -434,7 +434,7 @@ function displayArea(arr) {
         
 
       
-                <div onclick="getAreaMeals('${arr[i].strArea}')" class=" country rounded-2 text-center cursor-pointer py-3">
+                <div onclick="getAreaMeals('${arr[i].strArea}')" class=" country rounded-2 text-center pointer py-3">
                          <i class="fa-solid fa-earth-americas fa-3x"></i>
                         <h3>${arr[i].strArea}</h3>
                 </div>
@@ -485,7 +485,7 @@ function displayIngredients(arr) {
     for (let i = 0; i < arr.length; i++) {
         appCartoona += `
         <div class="col-md-3">
-                <div onclick="getIngredientsMeals('${arr[i].strIngredient}')" class=" ingredients rounded-2 text-center cursor-pointer">
+                <div onclick="getIngredientsMeals('${arr[i].strIngredient}')" class=" ingredients rounded-2 text-center pointer">
                 <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_1ybf5iqh.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
                         <h3>${arr[i].strIngredient}</h3>
                         <p>${arr[i].strDescription.split(" ").slice(0, 20).join(" ")}</p>
@@ -698,3 +698,4 @@ async function searchByFirstLetter(firstLetter) {
     $(".items-loading-screen").fadeOut(500)
 
 }
+/*End Of JS*/
