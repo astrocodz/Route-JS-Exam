@@ -47,7 +47,9 @@ body {
     z-index: 2;
 }
 
-
+.pointer{
+    cursor: pointer;
+}
 
 
 
